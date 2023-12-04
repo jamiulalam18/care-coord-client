@@ -25,6 +25,7 @@ const ManageRequests = () => {
         <Table.Head>
           <Table.HeadCell>Camp name</Table.HeadCell>
           <Table.HeadCell>User name</Table.HeadCell>
+          <Table.HeadCell>Role</Table.HeadCell>
           <Table.HeadCell>Status</Table.HeadCell>
           <Table.HeadCell>
             <span className="sr-only">Approve</span>

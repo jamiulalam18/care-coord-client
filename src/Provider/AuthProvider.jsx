@@ -47,7 +47,7 @@ import {
         console.log("user in the auth state changed", currentUser);
         setUser(currentUser);
         if (currentUser) {
-          const url = `http://localhost:5000/usersByEmail/${currentUser?.email}`;
+          const url = `https://mcms-server-alpha.vercel.app/usersByEmail/${currentUser?.email}`;
   
           axios.get(url).then((res) => setLoggedInUser(res.data));
         }

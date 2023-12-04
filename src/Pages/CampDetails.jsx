@@ -6,6 +6,7 @@ import useOrganizer from "../hooks/useOrganizer";
 import { AuthContext } from "../Provider/AuthProvider";
 import { successToast } from "../Components/Toasts/SuccessToast";
 import useHealthPro from "../hooks/useHealthPro";
+import { Helmet } from "react-helmet";
 
 const CampDetails = () => {
   const camp_id = useLoaderData();
@@ -59,6 +60,10 @@ const CampDetails = () => {
 
   return (
     <div className="max-w-2xl px-6 py-24 mx-auto space-y-12 bg-cambridge_blue-900 dark:bg-gray-800 dark:text-gray-50 pt-32 md:pt-24 ">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>CareCoord: Camp Details</title>
+      </Helmet>
       <div className="w-full mx-auto space-y-4 text-justify">
         <img src={thumbnail} className="w-full mb-4"></img>
         <h1 className="text-4xl font-bold md:text-5xl">{camp_name}</h1>

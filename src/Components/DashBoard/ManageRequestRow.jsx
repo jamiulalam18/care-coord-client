@@ -58,6 +58,7 @@ const ManageRequestRow = ({request, refresh, setRefresh}) => {
               <Link to={`/campDetails/${camp_id}`}>{campdetails?.camp_name}</Link>
             </Table.Cell>
             <Table.Cell>{userdetails?.full_name}</Table.Cell>
+            <Table.Cell>{userdetails?.role}</Table.Cell>
             <Table.Cell>{status}</Table.Cell>
             <Table.Cell>
               <Button
